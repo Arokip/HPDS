@@ -10,5 +10,7 @@ package cz.arokip.codewars;
  * @author Usuario
  */
 public class CodeWars {
-    
+    public static void main(String[] args) {
+
+    }
 }

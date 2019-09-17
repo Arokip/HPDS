@@ -14,23 +14,14 @@ import static org.junit.Assert.*;
  *
  * @author Usuario
  */
-public class CodeWarsTest {
+public class CodeWarsTests {
     
-    public CodeWarsTest() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
+    public CodeWarsTests() {
     }
 
     @Test
-    public void testSomeMethod() {
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    public void one_char() {
+        assertEquals(1,1);
     }
     
 }
