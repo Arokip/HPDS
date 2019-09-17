@@ -21,7 +21,7 @@ public class CodeWarsTests {
 
     @Test
     public void one_char() {
-        assertEquals(1,1);
+        assertEquals(CodeWars.NumericalsOfAString.numericals("a"), 1);
     }
     
 }
