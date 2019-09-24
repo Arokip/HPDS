@@ -14,12 +14,14 @@ public class NumberBreakdownTests {
                 {   1, new int[][] {{1, 0}}    },
                 {   2, new int[][] {{2, 0}}    },
                 {   3, new int[][] {{3, 0}}    },
+                {   10, new int[][] {{1, 1}}    },
         };
     }
 
     @ParameterizedTest
     @MethodSource("paramsSourceGeneration")
     public void exec(int number, int[][] breakDown) {
+
         assertArrayEquals(NumberBreakdown.brake(number), breakDown);
     }
 }
