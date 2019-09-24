@@ -15,6 +15,7 @@ public class NumberBreakdownTests {
                 {   2, new int[][] {{2, 0}}    },
                 {   3, new int[][] {{3, 0}}    },
                 {   10, new int[][] {{1, 1}}    },
+                {   -10, new int[][] {{-1, 1}}    },
         };
     }
 
