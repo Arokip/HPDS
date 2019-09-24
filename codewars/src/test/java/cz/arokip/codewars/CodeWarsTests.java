@@ -5,23 +5,24 @@
  */
 package cz.arokip.codewars;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
 
-/**
- *
- * @author Usuario
- */
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+
 public class CodeWarsTests {
-    
+
+    public class NumericalsOfAStringTests {
+        @Test
+        public void one_char() {
+            assertEquals(CodeWars.NumericalsOfAString.numericals("a"), "1");
+        }
+    }
+
     public CodeWarsTests() {
     }
 
-    @Test
-    public void one_char() {
-        assertEquals(CodeWars.NumericalsOfAString.numericals("a"), 1);
-    }
+
     
 }

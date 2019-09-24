@@ -13,4 +13,11 @@ public class CodeWars {
     public static void main(String[] args) {
 
     }
+
+    public static class NumericalsOfAString {
+
+        public static String numericals(String string) {
+            return "1";
+        }
+    }
 }
