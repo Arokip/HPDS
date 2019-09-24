@@ -11,7 +11,9 @@ public class NumberBreakdownTests {
 
     public static Object[][] paramsSourceGeneration() {
         return new Object[][] {
-                {   1, new int[][] {{1, 0}}    }
+                {   1, new int[][] {{1, 0}}    },
+                {   2, new int[][] {{2, 0}}    },
+                {   3, new int[][] {{3, 0}}    },
         };
     }
 
