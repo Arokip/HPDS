@@ -4,6 +4,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
+import java.util.ArrayList;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(Parameterized.class)
@@ -29,23 +31,37 @@ public class NumberBreaker_ {
                 {1, new int[][]{{1, 0}}},
                 {2, new int[][]{{2, 0}}},
                 {10, new int[][]{{1, 1}}},
-//                {11, new int[][]{{1, 1}, {1, 0}}},
+                {11, new int[][]{{1, 1}, {1, 0}}},
+                {111, new int[][]{{1, 2}, {1, 1}, {1, 0}}},
+                {101, new int[][]{{1, 2}, {1, 0}}},
                 {20, new int[][]{{2, 1}}},
                 {100, new int[][]{{1, 2}}},
                 {200, new int[][]{{2, 2}}},
-                {1000, new int[][]{{1, 3}}}
+                {258, new int[][]{{2, 2}, {5, 1}, {8, 0}}},
+                {1000, new int[][]{{1, 3}}},
+                {123456, new int[][]{{1, 5}, {2, 4}, {3, 3}, {4, 2}, {5, 1}, {6, 0}}}
         };
     }
 
     private static int[][] breakOf(int number) {
         if (number == 0) return new int[][]{};
-        int tmpNumber = number;
         int divCounter = 0;
-        while (tmpNumber >= 10) {
-            tmpNumber = tmpNumber / 10;
-            divCounter++;
+        ArrayList<Integer> numberList = new ArrayList<>();
+        while (number > 0) {
+            numberList.add(number % 10);
+            if (number % 10 != 0) divCounter++;
+            number = number / 10;
         }
-        return new int[][]{{tmpNumber, divCounter}};
-//        int[][] ss = new int[tmpNumber][2];
+
+        int[][] returnArray = new int[divCounter][2];
+        int sizeOfList = numberList.size();
+        int index = 0;
+        for (int i = 0; i < sizeOfList; i++) {
+            if (numberList.get(sizeOfList - i - 1) == 0) continue;
+            returnArray[index][0] = numberList.get(sizeOfList - i - 1);
+            returnArray[index][1] = sizeOfList - i - 1;
+            index++;
+        }
+        return returnArray;
     }
 }
