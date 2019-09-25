@@ -29,16 +29,23 @@ public class NumberBreaker_ {
                 {1, new int[][]{{1, 0}}},
                 {2, new int[][]{{2, 0}}},
                 {10, new int[][]{{1, 1}}},
+//                {11, new int[][]{{1, 1}, {1, 0}}},
                 {20, new int[][]{{2, 1}}},
                 {100, new int[][]{{1, 2}}},
-                {200, new int[][]{{2, 2}}}
+                {200, new int[][]{{2, 2}}},
+                {1000, new int[][]{{1, 3}}}
         };
     }
 
-    public static int[][] breakOf(int number) {
+    private static int[][] breakOf(int number) {
         if (number == 0) return new int[][]{};
-        if (number >= 100) return new int[][]{{number/100,2}};
-        if (number >= 10 ) return new int[][]{{number/10,1}};
-        return new int[][]{{number, 0}};
+        int tmpNumber = number;
+        int divCounter = 0;
+        while (tmpNumber >= 10) {
+            tmpNumber = tmpNumber / 10;
+            divCounter++;
+        }
+        return new int[][]{{tmpNumber, divCounter}};
+//        int[][] ss = new int[tmpNumber][2];
     }
 }
