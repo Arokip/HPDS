@@ -28,17 +28,17 @@ public class NumberBreaker_ {
                 {0, new int[][]{}},
                 {1, new int[][]{{1, 0}}},
                 {2, new int[][]{{2, 0}}},
-//                {10, new int[][]{{1, 1}}}
-
+                {10, new int[][]{{1, 1}}},
+                {20, new int[][]{{2, 1}}},
+                {100, new int[][]{{1, 2}}},
+                {200, new int[][]{{2, 2}}}
         };
     }
 
     public static int[][] breakOf(int number) {
-        if (number == 0) {
-            return new int[][]{};
-        }
+        if (number == 0) return new int[][]{};
+        if (number >= 100) return new int[][]{{number/100,2}};
+        if (number >= 10 ) return new int[][]{{number/10,1}};
         return new int[][]{{number, 0}};
-
     }
-
 }
