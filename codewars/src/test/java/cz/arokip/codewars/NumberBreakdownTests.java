@@ -5,6 +5,9 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
+import java.util.Arrays;
+import java.util.function.Predicate;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class NumberBreakdownTests {
@@ -22,7 +25,6 @@ public class NumberBreakdownTests {
     @ParameterizedTest
     @MethodSource("paramsSourceGeneration")
     public void exec(int number, int[][] breakDown) {
-
         assertArrayEquals(NumberBreakdown.brake(number), breakDown);
     }
 }
