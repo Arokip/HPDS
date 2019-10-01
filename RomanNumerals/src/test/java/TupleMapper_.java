@@ -31,7 +31,10 @@ public class TupleMapper_ {
     @Parameterized.Parameters
     public static Object[][] cases() {
         return new Object[][] {
-                {new int[][] {{1,0}}, "I"}
+                {new int[][] {{1,0}}, "I"},
+                {new int[][] {{2,0}}, "II"},
+                {new int[][] {{3,0}}, "III"},
+                {new int[][] {{3,1},{3,0}}, "XXXIII"},
         };
     }
 
@@ -41,6 +44,8 @@ public class TupleMapper_ {
     }
 
     private String mapTuple(int[][] tuples) {
-        return null;
+        return Arrays.stream(tuples)
+                .map(ar -> TABLE[ar[0] - 1][ar[1]])
+                .collect(Collectors.joining(""));
     }
 }
