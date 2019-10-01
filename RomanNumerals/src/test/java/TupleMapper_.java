@@ -2,23 +2,10 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
-import java.util.Arrays;
-import java.util.stream.Collectors;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(Parameterized.class)
 public class TupleMapper_ {
-    private static String[][] TABLE = {
-            {"I", "X", "C", "M"},
-            {"II", "XX", "CC", "MM"},
-            {"III", "XXX", "CCC", "MMM"},
-            {"IV", "XL", "DC"},
-            {"VI", "LX", "DC", "M"},
-            {"VII", "LXX", "DCC", "MM"},
-            {"VIII", "LXXX", "DCCC", "MMM"},
-            {"IX", "XC", "CM"}
-    };
 
     private final int[][] breakdown;
     private final String romanNumber;
@@ -40,12 +27,7 @@ public class TupleMapper_ {
 
     @Test
     public void execute() {
-        assertThat(mapTuple(breakdown)).isEqualTo(romanNumber);
+        assertThat(TupleMapper.maptuple(breakdown)).isEqualTo(romanNumber);
     }
 
-    private String mapTuple(int[][] tuples) {
-        return Arrays.stream(tuples)
-                .map(ar -> TABLE[ar[0] - 1][ar[1]])
-                .collect(Collectors.joining(""));
-    }
 }
