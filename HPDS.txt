@@ -1,0 +1,186 @@
+functional prgramming
+stream --> result
+
+map
+filter
+reduce (fold)
+
+
+List<Integer> numbers = Arrays.asList(1, 2, 3, ...);
+numbers.stream().filter(i -> i % 2 ==0);
+- lambda expressions
+
+numbers.stream().filter(i -> i % 2 ==0).collect(Collectors.toList()); // list contains only even numbers
+
+lambdu lze rozložit na annonymní třídu
+
+
+===============================================
+
+
+
+int[] lenght = new int[]{numberString.lenght()-1};
+final int[] lenght = {numberString.lenght()-1}; // must be array
+
+Array.strem(numberString.split(""))
+					.map(s->new int[]{Integer.parseInt(s), lenght[0]--})
+					.filter(t -> t[0] != 0)
+					.collect(Collectors.toList())
+					.toArray(new int[0][]);
+
+
+
+
+
+scratch file .. pro zkoušení kódu
+
+
+String s = "123";
+iterate (s.length, l->l-1)			//stream.IntStream.iterate;
+					.limit(s.length())
+					.boxed()				// IntStream --> Stream<Integer>
+					.map(i->newObject[]{number.substring(i, i+1), i})
+					.foreach(i->sout(i));
+
+
+int[][]::new to samé jako new int[][]
+můžeme pak volat ve funkcionálních částech třeba .filter(this::isNotZero)
+
+
+
+Refactoring technique: Replace Temp With Query
+
+Více čitelný kód. Ale za cenu toho, že to bude trochu pomalejší, ale to nám nevadí.
+
+
+
+
+Pak udělat i testy performance, jestli nám to doběhne třeba 1mil za sekundu..
+
+
+
+Reflection
+Ability of programming language to inspect code
+wiki: "In computer science, reflection is the ability of a process to examine, introspect, and modify its own structure and behavior."
+
+
+Class class_ = String.class;
+class_.
+
+Method method
+Field filed
+Constructor
+Annotation
+
+
+Class<?> aClass
+Class aClass = String.class;
+aClass.isInstance(obj: "aaa"); --> true
+aClass.isInstance(obj: 45612); --> false
+
+Method[] methods = aClass.getDeclaredMethods();
+foreahc(method) method.getName(), method.getParameterCount();
+
+Annotations anns = method.getAnnotations();
+foreach(anns) ann.annotationType().getName();
+
+if (ann.annType().isAssignableFrom(org.junit.Test))
+method.invoke(this);
+
+method.invoke(new Test());  // throws exceptions
+
+
+
+
+public interface BankAccont {
+	void withdraw(double amount);
+	Double money();
+}
+
+public class MyBankAccount implements BankAccont{ // normaly impementation of interface
+	@Override withdraw()
+}
+
+InvocationHandler handler = InvocationHandler(){
+	@Override
+	public Object invoke(Object proxy, Method method, Object[] args){
+		sout(method.getName()); --> write out name of called function
+		return null;
+	}
+}
+
+BankAccont bankAccont = (BankAccont)Proxy.newProxyInstance(
+	BankAccont.class.getClassLoader(),
+	new Class[] {new BankAccont.class},
+	handler);
+
+bankAccont.withdraw(100); // -->invoke method
+bankAccont.money();
+
+
+
+
+RomanNumerals --breakdown--> ((NumberBreaker)stub)
+
+^--Test
+
+
+class stub
+
+
+
+public interface BankAccont {
+	void withdraw(double amount);
+	Double money();
+}
+
+InvocationHandler handler = InvocationHandler(){
+	@Override
+	public Object invoke(Object proxy, Method method, Object[] args){
+		sout(method.getName()); --> write out name of called function
+		return method.invoke(b, args);
+	}
+}
+
+BankAccont bankAccont = (BankAccont)Proxy.newProxyInstance(
+	BankAccont.class.getClassLoader(),
+	new Class[] {new BankAccont.class},
+	handler);
+
+bankAccont.withdraw(100);
+Double money = bankAccont.money();
+
+
+Mockito (mockito.org) - maven library to stubs (it calls it mock)
+
+              Proxy
+      Stub----^   ^----Mock
+
+https://martinfowler.com/articles/mocksArentStubs.html
+
+stub - auditar - wrapper classy pro další testování (integration test)
+mock - simular (behavior) - vytvořit mock, který se tak jenom navenek tváří (simuluje metodu/třídu)
+
+Integracion test
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
