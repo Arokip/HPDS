@@ -58,6 +58,8 @@ Více čitelný kód. Ale za cenu toho, že to bude trochu pomalejší, ale to n
 Pak udělat i testy performance, jestli nám to doběhne třeba 1mil za sekundu..
 
 
+=======================================
+
 
 Reflection
 Ability of programming language to inspect code
@@ -150,9 +152,6 @@ BankAccont bankAccont = (BankAccont)Proxy.newProxyInstance(
 bankAccont.withdraw(100);
 Double money = bankAccont.money();
 
-
-Mockito (mockito.org) - maven library to stubs (it calls it mock)
-
               Proxy
       Stub----^   ^----Mock
 
@@ -164,22 +163,91 @@ mock - simular (behavior) - vytvořit mock, který se tak jenom navenek tváří
 Integracion test
 
 
+Mockito (mockito.org) - maven library to stubs (it calls it mock)
+
+List list = mock(List.class); // List is interface; IT IS a STUB!
+
+list.clear();
+list.add("one");
+
+sout(list.size()); // it is mock --> return 0
+
+verify(list).add("one"); // verify if list called method add with "one"
+verify(list).clear;
 
 
 
+//LinkedList mockedList = mock(LinkedList.clas);
+List mockedList = mock(List.clas);
+
+when(mockedList.get(0)).thenReturn("first"); // only for tests, we define what it should return
+when(mockedList.size()).thenReturn(10);
+sout(mockedList.get(0));
+sout(mockedList.get(1));
+sout(mockedList.size());
 
 
+----------------------------------------------
+
+Dependency injection - používání objektu aniž bych na ní měl referenci
+
+((1)) create new
+public class Switch{
+	private final Lamp lamp;
+	public Switch(){
+		this.lamp = new Lamp();
+	}
+}
+
+((2))
+public class Switch{
+	private final Lamp lamp;
+	public Switch(Lamp lamp){
+		this.lamp = lamp;
+	}
+
+	void turn(State state){
+ 		if else lamp.on/off();
+	}
+
+	void turn(){
+		if (lamp.isOn())
+		{
+			lamp.off();
+		} else {
+			lamp.on();
+		}
+	}
+
+	enum State{ON, OFF}
+}
+
+public interface Lamp{
+	void on();
+	void off();
+
+	boolean isOn();
+	boolean isOff();
+}
+
+@Test
+xxx(){
+	Lamp lamp = mock(Lamp.class);
+
+	when(lamp.isOn()).thenreturn(false); // init lamp
+	when(lamp.isOff()).thenreturn(true);
+
+	Switch s = new Switch(lamp);
+	//s.turn(ON);
+	s.turn();
+
+	verify(lamp).isOn();
+	verify(lamp).on();
+	verify(lamp, never()).off(); // never has been off
+}
 
 
-
-
-
-
-
-
-
-
-
+====================================================
 
 
 
