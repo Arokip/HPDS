@@ -279,6 +279,7 @@ test de integracion - udělat
 
 máme si vybrat jaké sensory a aktuátory - je to zcela na nás
 
+Prusa MK3
 
 
 =====================================================
@@ -303,7 +304,6 @@ confirmado <--commit-- preparado <--add-- modificado
 -----------> pull/push ----------------------|
 
 
-
 git flow
 
 branches:
@@ -313,6 +313,9 @@ release - preproduction, preparation for release for client
 develop - working branch
 feature(s) - plan for future releases, all should work here
 
+
+
+	
  
 
 
