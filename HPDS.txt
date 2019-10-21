@@ -314,9 +314,31 @@ develop - working branch
 feature(s) - plan for future releases, all should work here
 
 
+=====================================================
 
+
+Agile development
+
+PMP (Project Management Professional) metología/certificacion para proyectos larga
 	
- 
+-identificacion de personas
+-historias de usuario
+-backlog (priotizar las historias de usuario en funcion de valor y negocio)
+-raod map (que historias de usuario van en que entrega y cuántas Entregas tenemos identificadas)
+
+producto  /
+plazo      |
+precio    \
+
+
+metologia INVEST
+
+I	Independent	 The PBI should be self-contained, in a way that there is no inherent dependency on another PBI (Product Backlog Item).
+N	Negotiable	 PBIs are not explicit contracts and should leave space for discussion.
+V	Valuable	 A PBI must deliver value to the stakeholders.
+E	Estimatable	 You must always be able to estimate the size of a PBI.
+S	Small	     PBIs should not be so big as to become impossible to plan/task/prioritize within a level of accuracy.
+T	Testable	 The PBI or its related description must provide the necessary information to make test development possible.
 
 
 
