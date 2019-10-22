@@ -342,11 +342,24 @@ T	Testable	 The PBI or its related description must provide the necessary inform
 
 
 
+=====================================================
 
 
 
+Sensor <I>  getValue() <---mock test--- Codition <--- (Account-->)Rule ---> Action ---stub test---> Actuator <I> - doAction()
 
 
+Sensor - kamera, pak chování nějaké. Když je na kameře něco, když je tma, když je hodně hodin...
+
+doAction()
+- on/off
+- go 5m
+- go 30s
+
+
+Account:
+List<Sensor>
+List<Rule>
 
 
 
