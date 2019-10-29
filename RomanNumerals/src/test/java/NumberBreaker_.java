@@ -1,10 +1,8 @@
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-
 import java.util.Arrays;
 import java.util.stream.Collectors;
-
 import static java.lang.Integer.parseInt;
 import static java.lang.String.valueOf;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -49,6 +47,4 @@ public class NumberBreaker_ {
     public String tupleToString(int[] tuple) {
         return tuple[0] + "" + tuple[1] + "";
     }
-
-
 }
