@@ -70,7 +70,7 @@ Class class_ = String.class;
 class_.
 
 Method method
-Field filed
+Field field
 Constructor
 Annotation
 
@@ -360,6 +360,90 @@ doAction()
 Account:
 List<Sensor>
 List<Rule>
+
+
+=====================================================
+
+
+Account
+-ID
+-name
+-password
+
+
+Sensor
++getValue()
+
+
+Rule-->Condition-->Sensor
+
+
+
+tarea de hoy:
+entorno
+5 cosas 
+
+
+
+3d tiskárna na dálku
+-nastartovat tisk - model, parametry
+-kdy se tisk spustí
+-kdy je tisk dokončen
+-online video tisku věcoii
+-když se tisk nepodaří - uprostřed tisku se zkazí
+-objekt nejde vytisknout - špatné parametry
+
+
+
+
+senzory sekačky
+
+výška trávy
+naplnění koše
+vzdálenost od objektů
+málo baterie
+když začne pršet
+
+spojení s garáží - lokace garáže
+
+
+
+senzory domu:
+denní světlo
+teplota v místnosti
+teplota venku
+vlhkost vzduchu
+
+
+
+Intelligent greenhouse
+
+senzory:
+teplota vzduchu
+denní světlo
+vlhkost vzduchu
+vlhkost půdy
+živiny v půdě
+výška rostliny
+senzor částic ve vzduchu
+
+
+aktuátory:
+zalévání
+zvlhčovač vzduchu
+vyhřívání
+umělé osvětlení
+hnojení
+notifikace - je vysoká
+
+
+Account
+-pěstované rostliny
+-zalévání - jak často
+-chtěná teplota
+-chtěná vlhkost vzduchu
+-maximální výška
+-intenzita umělého dosvícení
 
 
 
