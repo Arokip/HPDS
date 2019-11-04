@@ -447,6 +447,73 @@ Account
 
 
 
+=====================================================
+
+
+GIT, GIT-FLOW
+
+Maven
+
+Annotation - tiene capacibilidad to modificar la funcionalidad, influir como funcciona (methodo)
+
+archivo .properties
+xml archivos
+BC4J ORACLE
+
+
+definir annotacion - @interface
+  // @Twizzle is an annotation to method toggle().
+  @Twizzle
+  public void toggle() {
+  }
+
+  // Declares the annotation Twizzle.
+  public @interface Twizzle {
+  }
+
+
+@Autowired
+MyClass myObject; // ve Springu --> dependency injection nějaké knihovny
+
+
+dependencia
+
+Dependency injection
+
+
+ClassA
+ClassB
+když chceme objA v objB, musíme najít způsob, jak dostat (injectar) objA do objB, abychom ho mohli použít
+
+
+ClassB implements <I>
+-ClassA objA
++ClassB()
++set ClassA(ClassA)
+
+---v
+
+<I> ClassA
+
+^---
+    
+ClassA
++method ClassA()
+
+
+UML class diagram
+-If there is no diamond, then we have a simple association.
+-If the diamond is left empty, it signifies it is an aggregation. This relation is stronger than a simple association. In this case a Customer aggregates Orders.
+-If the diamond is black, this means it is a composition, which is even stronger than an aggregation because the aggregated class cannot be aggregated by other classes. Its "life" depends on the container.
+
+
+
+
+
+
+
+
+
 
 
 
