@@ -509,7 +509,20 @@ UML class diagram
 
 
 
+=====================================================
 
+
+*SUT - system under test
+*Colaboradores
+
+1)configurar
+2)ejecutar
+3)verificar
+4)finalizar
+
+// Arrange     
+// Act
+// Assert
 
 
 
