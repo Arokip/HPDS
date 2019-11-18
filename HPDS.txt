@@ -1,4 +1,4 @@
-functional prgramming
+functional programming
 stream --> result
 
 map
@@ -529,12 +529,24 @@ UML class diagram
 =====================================================
 
 
-
 creacion dinamica de proxy (patron proxy)
+nové vysvětlení reflection (proxy)
+
+maven - command prompt --> ve složce s projektem
+
+mvn clean
+
+mvn validate
+mvn compilar
+mvn test
+mvn package
+
+java -jar C:\...\x.jar
 
 
 
-
-
+apache maven plugin Shade 
+https://maven.apache.org/plugins/
+https://maven.apache.org/plugins/maven-shade-plugin/usage.html --> <plugin>
 
 
