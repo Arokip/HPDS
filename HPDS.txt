@@ -526,6 +526,13 @@ UML class diagram
 
 
 
+=====================================================
+
+
+
+creacion dinamica de proxy (patron proxy)
+
+
 
 
 
