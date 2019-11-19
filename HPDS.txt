@@ -550,3 +550,57 @@ https://maven.apache.org/plugins/
 https://maven.apache.org/plugins/maven-shade-plugin/usage.html --> <plugin>
 
 
+
+
+=====================================================
+
+
+místo switch - metody do mapy
+
+seznam operátorů.. možnost přidat další.. pro menos10metros pro GPS
+
+
+
+IntegerConcreteSensor
+
+ArgumentCaptor
+
+
+
+ActuatorTest
+
+
+
+
+Rule = new rule
+
+rule.addCondition(new Condition(thresholeForCondition_0, ico_0, ics_0))
+rule.addCondition(new Condition(thresholeForCondition_1, ico_1, ics_1))
+
+rule.addAction(new Action)
+
+
+
+RuleTest
+whenExecuteRuleIfAllConditionAreEvaluatedAndAreTrueThenAllActionsArePowered(){
+	integerConcreteSensor ics_0 = mock
+	doReturn(7).when()
+
+
+
+//exec
+rule.execute()
+
+//verif
+
+verify(ics_0, times(1)).getValue();
+
+assertTrue(((Integer)thresholdCapture_0.getValue()).intValue() == threslhold;
+
+
+}
+
+
+
+
+
