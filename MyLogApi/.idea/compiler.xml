@@ -6,8 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="itff_2019" />
-        <module name="es.ulpgc.itff" />
+        <module name="MyLogApi" />
       </profile>
     </annotationProcessing>
   </component>

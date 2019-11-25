@@ -272,7 +272,7 @@ když je tolik hodin a nikdo není ve třídě (2 sensory) --> zhasni světla
 
 automatizovat třeba dům, železnici, traffic, výtah-hodiny a počty lidí
 když je baterie příliš vybitá, pošli mi sms
-když mi přijde nějaký email (z banky), tak... 
+když mi přijde nějaký email (z banky), tak...
 mobil - když jsem někdy podle gps, tak zpráva; když jiný sensor
 
 test de integracion - udělat
@@ -299,7 +299,7 @@ distributidos (GIT, Mercurio, Bazzar)
 GIT
 no-linear development - branches
 
-confirmado <--commit-- preparado <--add-- modificado 
+confirmado <--commit-- preparado <--add-- modificado
 |                                            ^
 -----------> pull/push ----------------------|
 
@@ -320,7 +320,7 @@ feature(s) - plan for future releases, all should work here
 Agile development
 
 PMP (Project Management Professional) metología/certificacion para proyectos larga
-	
+
 -identificacion de personas
 -historias de usuario
 -backlog (priotizar las historias de usuario en funcion de valor y negocio)
@@ -381,7 +381,7 @@ Rule-->Condition-->Sensor
 
 tarea de hoy:
 entorno
-5 cosas 
+5 cosas
 
 
 
@@ -496,7 +496,7 @@ ClassB implements <I>
 <I> ClassA
 
 ^---
-    
+
 ClassA
 +method ClassA()
 
@@ -520,7 +520,7 @@ UML class diagram
 3)verificar
 4)finalizar
 
-// Arrange     
+// Arrange
 // Act
 // Assert
 
@@ -545,7 +545,7 @@ java -jar C:\...\x.jar
 
 
 
-apache maven plugin Shade 
+apache maven plugin Shade
 https://maven.apache.org/plugins/
 https://maven.apache.org/plugins/maven-shade-plugin/usage.html --> <plugin>
 
@@ -600,7 +600,19 @@ assertTrue(((Integer)thresholdCapture_0.getValue()).intValue() == threslhold;
 
 }
 
+=====================================================
 
+# V pom.xml
 
+	- groupId
+	- artefactId
+	- version
 
+Na upload našeho kódu využijeme jednu z fází mavenu (install).
 
+Nový projekt MyLogAPi. Na nacvičení designování API.
+
+mvn install nám nainstalluje appku do C:/User/<username>/.m2. Potom stačí v
+novým projektu použít ty samý vlastnosti (groupId, artefactId a version) a maven
+projekt sám identifikuje a vyplní nám pom.xml. (kouká se právě do .m2 kde najde
+projekt a všechny jeho verze).

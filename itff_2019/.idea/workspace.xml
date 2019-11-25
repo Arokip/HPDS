@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66fbb04b-6e03-4b27-b1d4-7009733e002b" name="Default Changelist" comment="" />
+    <list default="true" id="66fbb04b-6e03-4b27-b1d4-7009733e002b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/ulpgc/Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/ulpgc/Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/ulpgc/Actuator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/ulpgc/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/ulpgc/CheckClock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/ulpgc/Clock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/ulpgc/ConcreteSensor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/ulpgc/Condition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/ulpgc/ConditionOperator$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/ulpgc/ConditionOperator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/ulpgc/ConditionOperatorInteger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/ulpgc/Log.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/ulpgc/Mail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/ulpgc/OPERATOR.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/ulpgc/Rule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/ulpgc/Sensor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-es.ulpgc.AppTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-es.ulpgc.ConditionTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/es.ulpgc.AppTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/es.ulpgc.ConditionTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/es/ulpgc/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/es/ulpgc/ConditionTest.class" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,13 +46,23 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1TCLKqfZcfk1oTTdDzAppwkx2Tj" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../NumberBreakdown" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
@@ -40,6 +79,11 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="es.ulpgc" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -86,10 +130,22 @@
       <workItem from="1572959072857" duration="4836000" />
       <workItem from="1573563195879" duration="5034000" />
       <workItem from="1574081655990" duration="3706000" />
+      <workItem from="1574686233336" duration="1066000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
