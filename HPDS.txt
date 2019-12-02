@@ -616,3 +616,46 @@ mvn install nám nainstalluje appku do C:/User/<username>/.m2. Potom stačí v
 novým projektu použít ty samý vlastnosti (groupId, artefactId a version) a maven
 projekt sám identifikuje a vyplní nám pom.xml. (kouká se právě do .m2 kde najde
 projekt a všechny jeho verze).
+
+
+=======================================================
+
+# Plugin
+
+## Vytvoření pluginu
+
+V pom.xml tag <packaging>maven-plugin</packaging>.
+Využijeme maven libraries, se kterými můžeme vytvářet pluginy:
+	- maven-plugin-api
+	- maven-plugin-annotations
+
+Třídu, která implementuje plugin oanotujeme s jménem pluginu.
+Třída, která implementuje plugin dědí od AbstractMojo -> jedinná metoda je
+execute.
+Můžeme si zvolit nějaký parametry, který nám pak předá maven. Tyto parametry
+musí být oanotovány s jménem parametru(==jméno fieldu) a defaultní hodnotou.
+
+## Použití pluginu
+
+V pom.xml:
+		<build>
+			<plugins>
+				<plugin>
+					<groupId>....</..>
+					<artifactId>....</..>
+					<version>...</..>
+					<configuration>
+						<jmenoParametru> hodnotaProParametr </jmenoParametru>
+					</configuration>
+					<executions>
+						<execution>
+							<phase>compile</..>
+							<goals>
+								<goal>sayHello</..>
+					</......>
+		</....>
+
+
+Pak jen v cmd:
+
+		mvn JmenoPluginu:JmenoGoalu
