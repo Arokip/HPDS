@@ -638,6 +638,8 @@ musí být oanotovány s jménem parametru(==jméno fieldu) a defaultní hodnoto
 ## Použití pluginu
 
 V pom.xml:
+
+```
 		<build>
 			<plugins>
 				<plugin>
@@ -654,8 +656,67 @@ V pom.xml:
 								<goal>sayHello</..>
 					</......>
 		</....>
+```
 
 
 Pak jen v cmd:
 
 		mvn JmenoPluginu:JmenoGoalu
+
+=======================================================
+
+# Rychlé opakování
+
+## Code smell
+
+https://cv-aep.ulpgc.es/cv/ulpgctp20/pluginfile.php/135131/mod_resource/content/1/T6.%20Code%20Smells.pdf
+
+<neúplné info z hodiny>
+
+- Duplikace kódu
+	- Jak vzniká?
+
+Chceme stejnou funkčnost ale architektura nám neumožňuje použít přesně ten smaý kód => musíme kopírovat.
+
+	- Proč potřebuje refaktorizaci?
+
+Dvě místa, kde opravovat chyby...
+
+- Mrtvý kód
+
+Kód, který není nikdy spuštěný.
+
+	- Jak vzniká?
+
+?
+
+- "Líná" třída
+
+Třída, která má málo funkcionality.
+
+- Co znamená perfektně okomentovaný?
+
+Nic. Špatná otázka..
+
+- codigo sobrante?
+
+- Dlouhé metody, třídy
+
+- Proxy
+
+- Posedlost primitivními typy
+
+</neúplné info z hodiny>
+
+
+# Test integrace
+
+V jakém životním cyklu mavenu běží? -> verify (né s unit testy)
+
+Plugin hledá testovací třídy, které obsahují string "IT" ve jménu třídy.
+
+Dále metody můžou být anotované s @Category. -> je nutná konfigurace pluginu. (dolores)
+
+# Deploy
+
+(dolores)
