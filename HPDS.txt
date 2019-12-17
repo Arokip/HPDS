@@ -659,3 +659,32 @@ V pom.xml:
 Pak jen v cmd:
 
 		mvn JmenoPluginu:JmenoGoalu
+
+
+=====================================================
+
+test v lednu:
+
+codewars - praktický, znalost TDD, git a maven
+legacy code --> refactorization
+vlastní repozitář ten den při testu
+
+
+
+task - facturas (gaps, overlaps, pending until today)
+indentificar SUT
+indentificar tests
+
+identificar errores - gaps, overlaps
+
+
+
+Big data, data management, deta gobernar
+MDM - master data management
+
+
+
+SUT - subject under test
+just one class
+
+mock - día de hoy (cont take system time - hoy would be every time)
