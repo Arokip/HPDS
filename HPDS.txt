@@ -752,3 +752,22 @@ just one class
 
 mock - día de hoy (cont take system time - hoy would be every time)
 
+Máme faktury a máme otestovat, jestli jsou v pořádku (gap, overlap..)
+
+nombre del clase:
+ServicePeriodReviser - our SUT
+-servicePeriod[]
+MAP
+SUT --> si hay error
+    --> ErrorType (gap, overlap)
+    --> daysPending
+    [To celé je Reviser]
+
+dělat funkcionálně
+
+primer test: mandar solo un servicio recibido --> no gap, no overlap, maybe pending
+create mock calendar (i can set día de hoy - set current date)
+
+segundo test: jestli je "od" později než "do", jestli recibido dává smysl
+
+
